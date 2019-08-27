@@ -14,4 +14,4 @@
   to = "/new-path"
   status = 301
   force = false
-  query = {path = ":path", email = ":email"}
+  query = [ {path = ":path"}, {email = ":email"} ]
