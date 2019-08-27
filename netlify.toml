@@ -1,2 +1,17 @@
 [context.production]
   publish = "."
+
+
+[[redirects]]
+  from = "/old-path"
+  to = "/new-path"
+  status = 301
+  force = false
+  query = {path = ":path"}
+
+[[redirects]]
+  from = "/old-path"
+  to = "/new-path"
+  status = 301
+  force = false
+  query = {query1 = ":query1", query2 = ":query2"}
